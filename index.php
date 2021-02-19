@@ -16,8 +16,8 @@
       </div>
       <ul class="nav-links">
         <li><a href="#">Accueil</a></li>
-        <li><a href="#">A propos</a></li>
-        <li><a href="#">Mon travail</a></li>
+        <li><a href="#Apropos">A propos</a></li>
+        <li><a href="#Montravail">Mon travail</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -25,21 +25,56 @@
 
     <main>
 
-      <h1 class="title">Alban.Teissier</h1>
+      <div class="img">
+        <img src="img/trait.png" alt="">
+        <h1 class="title">Alban  .  Teissier</h1>
+      </div>
+   
       <br>
       <p class="title">web développeur - web designer</p>
 
-
-
-
-
-
-
-
     </main>
 
- 
+    <section id="Montravail">
+      <video id="slider" autoplay muted loop>
+        <source src="video/video3.mp4" type="video/mp4">
+      </video>
+
+      <ul class="navigation">
+        <li onclick="videoUrl('video/video1.mp4')"><img src="img/image.jpg" alt=""></li>
+        <li onclick="videoUrl('video/video2.mp4')"><img src="img/image.jpg" alt=""></li>
+        <li onclick="videoUrl('video/video3.mp4')"><img src="img/image.jpg" alt=""></li>
+        <li onclick="videoUrl('video/video4.mp4')"><img src="img/image.jpg" alt=""></li>
+      </ul>
+    </section>
+
+
+    <div class="container">
+      <article id="Apropos" class="intro-text">
+        <h2>A propos</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam libero provident nihil consequuntur qui ad dolor, doloremque iusto voluptates culpa debitis fugit iure ex reiciendis officia dolorem consequatur sapiente architecto.</p>
+      </article>
+
+      <article class="intro-photo">
+        <img src="img/albanito.png" alt="">
+      </article>
+    </div>
+
+    <footer>
+      Footer
+    </footer>
+  
+    
+    
+    
+    <script type="text/javascript">
+      function videoUrl(hmmmmmm){
+        document.getElementById("slider").src = hmmmmmm;
+      }
+    </script>
+
     <script src="js/title.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/text_show.js"></script>
   </body>
 
